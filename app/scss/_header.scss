@@ -1,0 +1,142 @@
+.header {
+	position: relative;
+	width: 100%;
+	background: #EE9309;
+	box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.20), inset 3px 3px 11px rgba(0, 0, 0, 0.2);
+	
+	}
+.header-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	.header-grid__item {
+
+		a{
+
+			.logo-block {
+				display: flex;
+				align-items: center;
+				height: 100%;
+				padding: 10px 0;
+				color: #fff;
+
+				.logo {
+					width: 30px;
+					border-radius: 50%;
+					background: #F2F2F2;
+					border: 2px solid #FFFFFF;
+					padding: 4px;
+					margin-right: 10px;
+				}
+				.info-block{
+
+					.name-site {
+						display: block;
+						font-weight: 500;
+						font-size: 12px;
+						text-transform: uppercase;
+					}
+					.name-lk {
+						font-weight: 700;
+						font-size: 16px;
+					}
+				}
+
+			}
+		}
+		nav {
+			height: 100%;
+			ul {
+				display: grid;
+				grid-template-columns: repeat(7, 1fr) ;	
+
+				li {
+
+					a {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						color: #fff;
+						height: 100%;
+						padding: 8px 5px;
+						transition: all .5s;
+						position: relative;
+
+						.header-icon-font {
+							font-size: 36px;
+						}
+						.item-menu {
+							font-size: 10px;
+							text-align: center;
+							line-height: 1em;
+						}
+						&:hover {
+							background: #ffffff29;
+							box-shadow: inset -3px -3px 11px 24px rgba(255, 255, 255, 0.25), inset 3px 4px 10px rgba(255, 255, 255, 0.65);
+
+						}
+						.num {
+							width: 15px;
+							height: 15px;
+							background: #dc3545;
+							font-size: 8px;
+							text-align: center;
+							color: #ffffff;
+							border-radius: 50%;
+							line-height: 15px;
+							position: absolute;
+							right: 22px;
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+@media (min-width: 991px) {
+	.header-grid {
+		grid-template-columns: 1fr 1fr;
+	
+		.header-grid__item {
+	
+			a{
+	
+				.logo-block {
+					.logo {
+						width: 40px;
+					}
+					.info-block{
+	
+						.name-site {
+							font-size: 12px;
+						}
+						.name-lk {
+							font-size: 16px;
+						}
+					}
+	
+				}
+			}
+			nav {
+				ul {	
+	
+					li {
+	
+						a {
+
+							.header-icon-font {
+
+							}
+							.item-menu {
+
+							}
+
+							}
+						}
+					}
+				}
+			}
+	
+		}
+	}

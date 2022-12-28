@@ -1,0 +1,24 @@
+.breadcrumbs {
+
+}
+
+.breadcrumbs-block {
+	ul {
+		display: flex;
+		align-items: center;
+		padding: 5px;
+
+		li {
+	font-size: .8em;
+			a {
+				color: #B3B3B3;
+				transition: all .5s;
+			}
+		}
+		.icon-arr-crum {
+			font-size: 8px;
+			color: #C6C6C6;
+			margin: 0 5px;
+		}
+	}
+}
